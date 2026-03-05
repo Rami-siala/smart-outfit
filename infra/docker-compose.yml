@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: smartoutfit_db
+    environment:
+      POSTGRES_DB: smartoutfit
+      POSTGRES_USER: smartoutfit
+      POSTGRES_PASSWORD: smartoutfit
+    ports:
+      - "5432:5432"
+    volumes:
+      - smartoutfit_pgdata:/var/lib/postgresql/data
+
+volumes:
+  smartoutfit_pgdata:
