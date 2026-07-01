@@ -1,0 +1,47 @@
+name: frontend
+description: "Smart Outfit Flutter App"
+publish_to: "none"
+
+version: 1.0.1+2
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.1
+  shared_preferences: ^2.2.3
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  google_sign_in: ^6.3.0
+  image_picker: ^1.2.1
+  geolocator: ^14.0.2
+  intl: ^0.20.2
+  image_cropper: ^12.2.1
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/outfits/casual/normal/
+    - assets/outfits/casual/rainy/
+    - assets/outfits/casual/sunny/
+    - assets/outfits/chic/normal/
+    - assets/outfits/chic/rainy/
+    - assets/outfits/chic/sunny/
+    - assets/outfits/sport/normal/
+    - assets/outfits/sport/rainy/
+    - assets/outfits/sport/sunny/
+    
